@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/williams-w-favicon.svg"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>williams joinery</title>
+  </head>
+  <body>
+    <!-- top header section -->
+    <header>
+      <div class="top-container">
+        <div class="top-container-container">
+          <a href="mailto:info@williamsjoinery.co.uk">
+            EMAIL<br />
+            info@williamsjoinery.co.uk
+          </a>
+          <a
+            href="https://www.google.com/maps/place/Williams+Joinery/@53.8499038,-2.1375455,15z/data=!4m2!3m1!1s0x0:0x13db350a72cdf45c?sa=X&ved=2ahUKEwiE_Zijkfr2AhXMOcAKHcTsAtgQ_BJ6BAhDEAU"
+            >UNIT 2. LODGE HOLME.<br />
+            SKIPTON RD.TRAWDEN.<br />COLNE. BB8 8RA</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- centered logo container -->
+    <div class="middle-logo-container">
+      <div class="middle-logo-container-container">
+        <img
+          id="middle-logo"
+          src="./assets/williams-horizontal-white.svg"
+        />
+      </div>
+    </div>
+
+    <!-- bottom footer section -->
+    <footer>
+      <div class="bottom-container">
+        <div class="bottom-container-container">
+          <a href="tel:07595992925">TELEPHONE<br />+44 (0)759 599 2925</a>
+          <a
+            >BESPOKE JOINERY<br />
+            & WOODWORKING</a
+          >
+          <span style="cursor: crosshair" onclick="openInfo()">
+            more information</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeInfo()"
+        >&times;</a
+      >
+
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <img
+          class="wordmark-logo"
+          src="./assets/"
+          alt="williams-joinery-cl"
+        />
+        <h2 href="#overlay-header">ABOUT US</h2>
+        <p>
+          High-quality, bespoke craftsmanship for the most discerning clients.
+          Every commission is a unique opportunity to create something entirely
+          new, offering a truly bespoke, concept-to-completion service.
+        </p>
+        <p>
+          High-quality, bespoke craftsmanship for the most discerning clients.
+          Every commission is a unique opportunity to create something entirely
+          new.
+        </p>
+        <h2 class="social-links">ADDRESS</h2>
+        <p>UNIT 2. LODGE HOLME. SKIPTON RD.TRAWDEN.COLNE. BB8 8RA</p>
+          <img
+          class="badge-logo"
+          src="./assets/williams-circular-cursor-wordmark-black.svg"
+          alt="williams-joinery-cl"
+        />
+        <!-- <div class="social-icons-group">
+          <a href="www.facebook.com">FACEBOOK</a>
+          <a href="www.instagram.com">INSTAGRAM</a>
+          <a href="www.pinterest.com">PINTEREST</a>
+          <a href="www.dribbble.com">DRIBBLE</a>
+        </div> -->
+      </div>
+    </div>
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeInfo()"
+        >&times;</a
+      >
+    <!-- mouse cursor container -->
+    <div class="cursor-container">
+      <div>
+        <img src="./assets/williams-horizontal-black.svg" />
+      </div>
+    </div>
+    <!-- cursor javascript -->
+    <script src="./cursor.js"></script>
+    <!-- change background image javascript -->
+    <script src="./backgroundChanger.js"></script>
+    <!-- information slider javascript -->
+    <script src="./information.js"></script>
+  </body>
+</html>
