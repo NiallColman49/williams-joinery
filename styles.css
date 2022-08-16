@@ -17,12 +17,10 @@ body {
   text-decoration: underline;
   letter-spacing: 0.1em;
   cursor: none;
-  overflow-y: hidden;
-  overflow-x: hidden;
   color: white;
   background-image: url("./images/williams-joinery-13.jpg");
   background-size: cover;
-  border: 30px solid white;
+  border: 2.5em solid white;
   display: block;
   box-sizing: border-box;
 }
@@ -40,7 +38,7 @@ span {
 
 .top-container {
   width: 80%;
-  margin-top: 50px;
+  margin-top: 3.8em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -60,7 +58,7 @@ span {
 
 .bottom-container {
   position: absolute;
-  bottom: 75px;
+  bottom: 6.3em;
   width: 76%;
   left: 50%;
   margin-left: -38%;
@@ -88,6 +86,7 @@ span {
 }
 
 .overlay {
+  cursor: pointer;
   height: 100%;
   width: 0;
   position: fixed;
@@ -119,7 +118,7 @@ h2 {
   top: 5%;
   width: 75%;
   text-align: left;
-  margin-left: 35px;
+  margin-left: 40px;
   color: black;
 }
 
@@ -162,4 +161,53 @@ h2 {
   right: 45px;
   font-size: 60px;
   color: black;
+}
+
+.mobile-info {
+  display: none;
+}
+
+.mobile-click {
+  display: none;
+}
+
+.overlay-content-mobile-view {
+  display: none;
+}
+
+.badge-logo-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .middle-logo-container {
+    width: 65%;
+  }
+
+  .desktop-phone,
+  .desktop-address,
+  .desktop-email,
+  .desktop-bespoke,
+  .desktop-info,
+  .cursor-container {
+    display: none;
+  }
+
+  .mobile-info {
+    display: block;
+    margin: auto;
+  }
+
+  .mobile-click {
+    display: block;
+    margin: auto;
+  }
+
+  .social-links {
+    display: none;
+  }
+
+  .badge-logo {
+    display: none;
+  }
 }

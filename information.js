@@ -1,7 +1,12 @@
 function openInfo() {
-  document.getElementById("myNav").style.width = "30%";
+  const mediaQuery = window.matchMedia("(max-width: 640px)");
+  if (mediaQuery.matches) {
+    document.getElementById("information").style.width = "100%";
+  } else {
+    document.getElementById("information").style.width = "30%";
+  }
 }
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
+function closeInfo() {
+  document.getElementById("information").style.width = "0%";
 }

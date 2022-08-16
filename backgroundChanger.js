@@ -2,7 +2,6 @@ const bodyTag = document.querySelector("body");
 
 let imageGallery = [
   "url(./images/williams-joinery-2.jpg)",
-  "url(./images/williams-joinery-1.jpg)",
   "url(./images/williams-joinery-3.jpg)",
   "url(./images/williams-joinery-4.jpg)",
   "url(./images/williams-joinery-6.jpg)",
@@ -17,5 +16,5 @@ let imageGallery = [
 let counter = 0;
 
 bodyTag.addEventListener("click", function () {
-  bodyTag.style.backgroundImage = imageGallery[counter++];
+  bodyTag.style.backgroundImage = imageGallery[counter++ % imageGallery.length];
 });

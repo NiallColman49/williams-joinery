@@ -17,14 +17,19 @@
     <header>
       <div class="top-container">
         <div class="top-container-container">
-          <a href="mailto:info@williamsjoinery.co.uk">
+          <a class="desktop-email" href="mailto:info@williamsjoinery.co.uk">
             EMAIL<br />
             info@williamsjoinery.co.uk
           </a>
           <a
+            class="desktop-address"
             href="https://www.google.com/maps/place/Williams+Joinery/@53.8499038,-2.1375455,15z/data=!4m2!3m1!1s0x0:0x13db350a72cdf45c?sa=X&ved=2ahUKEwiE_Zijkfr2AhXMOcAKHcTsAtgQ_BJ6BAhDEAU"
             >UNIT 2. LODGE HOLME.<br />
             SKIPTON RD. TRAWDEN.<br />COLNE. BB8 8RA</a
+          >
+          <a class="mobile-info"
+            >BESPOKE JOINERY<br />
+            & WOODWORKING</a
           >
         </div>
       </div>
@@ -41,12 +46,25 @@
     <footer>
       <div class="bottom-container">
         <div class="bottom-container-container">
-          <a href="tel:07595992925">TELEPHONE<br />+44 (0)759 599 2925</a>
-          <a
+          <a class="desktop-phone" href="tel:07595992925"
+            >TELEPHONE<br />+44 (0)759 599 2925</a
+          >
+          <a class="desktop-bespoke"
             >BESPOKE JOINERY<br />
             & WOODWORKING</a
           >
-          <span style="cursor: crosshair" onclick="openInfo()">
+          <span
+            class="desktop-info"
+            style="cursor: pointer"
+            onclick="openInfo()"
+          >
+            more information</span
+          >
+          <span
+            class="mobile-click"
+            style="cursor: pointer"
+            onclick="openInfo()"
+          >
             more information</span
           >
         </div>
@@ -54,9 +72,9 @@
     </footer>
 
     <!-- The overlay -->
-    <div id="myNav" class="overlay">
+    <div id="information" class="overlay">
       <!-- Button to close the overlay navigation -->
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+      <a href="javascript:void(0)" class="closebtn" onclick="closeInfo()"
         >&times;</a
       >
 
@@ -67,7 +85,7 @@
           src="./assets/williams-horizontal-black.svg"
           alt="williams-joinery-cl"
         />
-        <h2 href="#overlay-header">ABOUT US</h2>
+        <h2>ABOUT US</h2>
         <p>
           High-quality, bespoke craftsmanship for the most discerning clients.
           Every commission is a unique opportunity to create something entirely
@@ -93,10 +111,42 @@
           <a href="www.dribbble.com">DRIBBLE</a>
         </div> -->
       </div>
+      <div class="overlay-content-mobile-view">
+        <img
+          class="wordmark-logo"
+          src="./assets/williams-horizontal-black.svg"
+          alt="williams-joinery-cl"
+        />
+        <h2>ABOUT US</h2>
+        <p>
+          High-quality, bespoke craftsmanship for the most discerning clients.
+          Every commission is a unique opportunity to create something entirely
+          new, offering a truly bespoke, concept-to-completion service.<br />
+          <br />
+        </p>
+        <p>
+          High-quality, bespoke craftsmanship for the most discerning clients.
+          Every commission is a unique opportunity to create something entirely
+          new.
+        </p>
+        <h2 class="social-links">ADDRESS</h2>
+        <p>UNIT 2. LODGE HOLME. SKIPTON RD.TRAWDEN.COLNE. BB8 8RA</p>
+        <img
+          class="badge-logo-mobile"
+          src="./assets/williams-circular-wordmark.svg"
+          alt="williams-joinery-cl"
+        />
+        <!-- <div class="social-icons-group">
+          <a href="www.facebook.com">FACEBOOK</a>
+          <a href="www.instagram.com">INSTAGRAM</a>
+          <a href="www.pinterest.com">PINTEREST</a>
+          <a href="www.dribbble.com">DRIBBLE</a>
+        </div> -->
+      </div>
     </div>
 
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+    <div id="information" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeInfo()"
         >&times;</a
       >
     </div>
