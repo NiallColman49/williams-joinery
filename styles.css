@@ -1,5 +1,20 @@
 @import url(//db.onlinewebfonts.com/c/1dced00e473a2db7b3d52a4c8392f31e?family=Euclid+Circular+A+Light);
 
+@font-face {
+  font-family: "Euclid Circular A Light";
+  src: url("//db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.eot");
+  src: url("//db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/1dced00e473a2db7b3d52a4c8392f31e.svg#Euclid Circular A Light")
+      format("svg");
+}
+
 * {
   margin: 0;
   border: 0;
