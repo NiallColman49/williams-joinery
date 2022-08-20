@@ -93,7 +93,10 @@ span {
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #e8d7c5;
+  background-image: url(slider-background_1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #e8d7c5; */
   overflow-x: hidden;
   transition: 0.5s;
   font-family: Euclid Circular A Light;
@@ -118,7 +121,7 @@ h2 {
   top: 5%;
   width: 75%;
   text-align: left;
-  margin-left: 40px;
+  margin-left: 62px;
   color: black;
 }
 
@@ -141,10 +144,10 @@ h2 {
 }
 
 .badge-logo {
-  margin-left: 275px;
+  margin-left: 255px;
   width: 80px;
   z-index: 2;
-  transform: translateY(-65px);
+  transform: translateY(-80px);
 }
 
 .social-links {
@@ -203,11 +206,11 @@ h2 {
     margin: auto;
   }
 
-  .social-links {
-    display: none;
+  .badge-logo {
+    transform: translateX(-60px);
   }
 
-  .badge-logo {
-    display: none;
+  .overlay {
+    font-size: 11px;
   }
 }
