@@ -159,10 +159,12 @@ h2 {
 }
 
 .badge-logo {
-  margin-left: 255px;
-  width: 80px;
+  position: absolute;
+  width: 7em;
+  right: 10px;
+  margin-top: 5px;
   z-index: 2;
-  transform: translateY(-80px);
+  transform: translateY(-30px); */
 }
 
 .social-links {
