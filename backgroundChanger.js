@@ -15,6 +15,6 @@ let imageGallery = [
 
 let counter = 0;
 
-bodyTag.addEventListener("click", function () {
+bodyTag.addEventListener("click", () => {
   bodyTag.style.backgroundImage = imageGallery[counter++ % imageGallery.length];
 });

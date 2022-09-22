@@ -21,6 +21,45 @@
   padding: 0;
 }
 
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #DADAD9;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader img {
+  width: 10%;
+  animation: image-spin infinite 10s linear
+}
+
+@keyframes image-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.disappear {
+  animation: vanish 0.5s forwards;
+  animation-delay: 4s;
+}
+
+@keyframes vanish {
+   100%  {
+    opacity: 0;
+    visibility: hidden;
+   }
+}
+
 body {
   height: 100vh;
   width: 100vw;
@@ -111,7 +150,6 @@ span {
   background-image: url(slider-background_1.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-color: #e8d7c5; */
   overflow-x: hidden;
   transition: 0.5s;
   font-family: Euclid Circular A Light;
@@ -178,8 +216,10 @@ h2 {
 
 .overlay .closebtn {
   position: absolute;
-  right: 45px;
+  right: 2.8rem;
+  top: 2.8rem;
   font-size: 60px;
+  line-height: 0;
   color: black;
 }
 
