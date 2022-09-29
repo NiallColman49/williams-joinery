@@ -26,7 +26,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #DADAD9;
+  background-color: #dadad9;
   height: 100%;
   width: 100%;
   display: flex;
@@ -37,7 +37,7 @@
 
 .loader img {
   width: 10%;
-  animation: image-spin infinite 10s linear
+  animation: image-spin infinite 10s linear;
 }
 
 @keyframes image-spin {
@@ -55,10 +55,10 @@
 }
 
 @keyframes vanish {
-   100%  {
+  100% {
     opacity: 0;
     visibility: hidden;
-   }
+  }
 }
 
 body {
@@ -154,7 +154,6 @@ span {
   overflow-x: hidden;
   transition: 0.5s;
   font-family: Euclid Circular A Light;
-  line-height: 1.8;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.1em;
@@ -184,7 +183,7 @@ h2 {
   font-family: Euclid Circular A Light;
   text-align: center;
   font-size: 11px;
-  line-height: 1.8;
+  line-height: 0;
   letter-spacing: 0.1em;
   display: block;
   transition: 0.3s;
@@ -203,7 +202,7 @@ h2 {
   right: 10px;
   margin-top: 5px;
   z-index: 2;
-  transform: translateY(-30px); */
+  transform: translateY(-30px);
 }
 
 .social-links {
@@ -241,6 +240,15 @@ h2 {
 }
 
 @media screen and (max-width: 640px) {
+  .loader img {
+    width: 35%;
+    animation: image-spin infinite 10s linear;
+  }
+
+  body {
+    text-align: left;
+  }
+
   .middle-logo-container {
     width: 65%;
   }
@@ -269,6 +277,34 @@ h2 {
   }
 
   .overlay {
-    font-size: 11px;
+    font-size: 12px;
   }
+
+  .overlay-content {
+    display: none;
+  }
+
+  .overlay-content-mobile-view {
+    display: block;
+    padding-left: 75px;
+    padding-right: 60px;
+    color: black;
+  }
+
+  .wordmark-logo {
+    width: 60%;
+    margin-top: 51px;
+  }
+
+  .social-links {
+    margin-top: 25px;
+  }
+
+  /* .badge-logo-mobile {
+    display: block;
+    position: absolute;
+    width: 20%;
+    right: 20px;
+    bottom: 10px;
+  } */
 }
